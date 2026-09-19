@@ -144,17 +144,13 @@
             color: var(--text-secondary);
         }
 
-        .lang-selector button {
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            cursor: pointer;
-            font-size: 0.875rem;
-            font-weight: 500;
+        .lang-selector a.active {
+            color: var(--text-primary);
+            font-weight: 600;
         }
 
-        .lang-selector button:hover {
-            color: var(--text-primary);
+        .lang-selector a.active::after {
+            width: 100%;
         }
 
         .mobile-toggle {
@@ -882,12 +878,11 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#github-highlights">Engenharia</a></li>
                 <li><a href="#freelance">Freelance</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li class="lang-selector">
-                    <a href="./index.html" data-lang="pt-BR">PT</a>
+                    <a href="./index.html" data-lang="pt-BR" class="active">PT</a>
                     <span>|</span>
                     <a href="./en/index.html" data-lang="en-US">EN</a>
                 </li>
@@ -976,23 +971,6 @@
                         </span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="github-highlights" class="container">
-        <div class="section-header animate-on-scroll">
-            <div class="section-label">Engenharia</div>
-            <h2 class="section-title">Engenharia de Software</h2>
-        </div>
-        <div class="about-grid">
-            <div class="about-content animate-on-scroll">
-                <h3>Arquitetura Backend & Golang</h3>
-                <p>Projetos de alta performance e APIs escaláveis. Experiência técnica em arquitetura orientada a serviços e otimização de sistemas, exemplificada por implementações em Go como <i>busca-cep-go</i> e <i>go-documents</i>.</p>
-            </div>
-            <div class="about-content animate-on-scroll">
-                <h3>Open Source & Performance</h3>
-                <p>Contribuições ativas no ecossistema open source, com foco em benchmarking, redução de latência e desenvolvimento de ferramentas para otimização de performance (ex: <i>go-perfbook</i>).</p>
             </div>
         </div>
     </section>
@@ -1278,67 +1256,64 @@
             </div>
             <div class="experience-timeline">
                 <div class="experience-item animate-on-scroll">
+                    <div class="experience-date">Jun 2025 - Mar 2026</div>
+                    <h3 class="experience-title">Engenheiro de Software</h3>
+                    <div class="experience-company">Plathanus</div>
+                    <p class="experience-desc">Desenvolvimento e evolução de plataformas de software para os segmentos de crédito e serviços/manutenção. APIs backend em Java e aplicações frontend com React e VueJS. Scripts e aplicações CLI em Golang para processos internos. Manutenção evolutiva, correção de problemas e novas funcionalidades em produtos internos, com atuação full stack na evolução e sustentação de sistemas de produção.</p>
+                </div>
+                <div class="experience-item animate-on-scroll">
                     <div class="experience-date">Set 2024 - Mar 2025</div>
                     <h3 class="experience-title">Desenvolvedor Full Stack Sênior</h3>
                     <div class="experience-company">Tech6 Group</div>
-                    <p class="experience-desc">Desenvolvimento de plataforma ERP e CRM voltadas ao mercado imobiliário
-                        dos EUA. Utilização de C# e Typescript para APIs backend e React para frontend.</p>
+                    <p class="experience-desc">Desenvolvimento e evolução de plataformas ERP e CRM para o mercado imobiliário dos Estados Unidos. APIs backend em C# e TypeScript, interfaces e funcionalidades frontend em React. Scripts e aplicações CLI em Golang para necessidades específicas da plataforma, além de correção de problemas e manutenção evolutiva dos sistemas.</p>
                 </div>
                 <div class="experience-item animate-on-scroll">
                     <div class="experience-date">Jun 2018 - Ago 2024</div>
                     <h3 class="experience-title">Desenvolvedor Sênior / Especialista</h3>
                     <div class="experience-company">Dot Digital Group</div>
-                    <p class="experience-desc">Desenvolvimento da plataforma LMS StudiOn. Implementação de microserviços
-                        e serviços autocontidos. Stack: PHP, Golang e VueJS.</p>
+                    <p class="experience-desc">Desenvolvimento e evolução da plataforma LMS StudiOn, uma solução de e-learning. Implementação e evolução de microserviços e serviços autocontidos, com foco em escalabilidade e performance. Backend em PHP e Golang aplicando Domain-Driven Design (DDD) e Arquitetura Hexagonal; frontend em VueJS e manutenção de aplicações em Java.</p>
                 </div>
                 <div class="experience-item animate-on-scroll">
                     <div class="experience-date">Out 2016 - Mai 2018</div>
                     <h3 class="experience-title">Desenvolvedor Full Stack</h3>
                     <div class="experience-company">Converte DSP</div>
-                    <p class="experience-desc">Plataforma de marketing com foco em distribuição e otimização de
-                        campanhas. Backend PHP e módulo de inteligência em Java.</p>
+                    <p class="experience-desc">Desenvolvimento e evolução de plataforma de marketing digital voltada à distribuição e otimização de campanhas. Soluções backend em PHP e módulo de inteligência em Java para processamento e otimização de campanhas digitais.</p>
                 </div>
                 <div class="experience-item animate-on-scroll">
                     <div class="experience-date">Ago 2014 - Out 2016</div>
                     <h3 class="experience-title">Analista Desenvolvedor Sênior</h3>
                     <div class="experience-company">Dot Digital Group</div>
-                    <p class="experience-desc">Desenvolvimento e manutenção de sistemas web e LMS. Liderança de equipe
-                        de suporte. Java Swing, PHP e JSF + Hibernate.</p>
+                    <p class="experience-desc">Desenvolvimento e manutenção de sistemas web e plataformas de e-learning (LMS). Desenvolvimento de aplicações com Java, PHP, JSF e Hibernate, além da liderança da equipe de suporte, contribuindo para a resolução de problemas e continuidade dos sistemas de produção.</p>
                 </div>
                 <div class="experience-item animate-on-scroll">
                     <div class="experience-date">Jul 2012 - Ago 2014</div>
                     <h3 class="experience-title">Web Developer Pleno</h3>
                     <div class="experience-company">Psafe</div>
-                    <p class="experience-desc">Desenvolvimento em C#, manutenção de plataforma de ad server.
-                        Participação no app Psafe Total para Android.</p>
+                    <p class="experience-desc">Desenvolvimento e manutenção de aplicações em C#. Evolução da plataforma de Ad Server baseada em OpenX, participação no desenvolvimento do app Psafe Total para Android e desenvolvimento de robôs de scraping em Java.</p>
                 </div>
                 <div class="experience-item animate-on-scroll">
                     <div class="experience-date">Ago 2011 - Jul 2012</div>
                     <h3 class="experience-title">Programador PHP Pleno</h3>
                     <div class="experience-company">Quepasa Games</div>
-                    <p class="experience-desc">Desenvolvimento e manutenção de integração de APIs de jogos online.
-                        Plataforma API em PHP.</p>
+                    <p class="experience-desc">Desenvolvimento e manutenção de integrações com APIs de jogos online. Plataforma baseada em APIs PHP sem frameworks, com implementação e evolução de serviços de integração para jogos online.</p>
                 </div>
                 <div class="experience-item animate-on-scroll">
                     <div class="experience-date">Jul 2010 - Ago 2011</div>
                     <h3 class="experience-title">Analista Programador</h3>
                     <div class="experience-company">Sofhar</div>
-                    <p class="experience-desc">Desenvolvimento de soluções para educação na Prefeitura de Curitiba. CMSs
-                        para sites institucionais.</p>
+                    <p class="experience-desc">Desenvolvimento de soluções para projetos educacionais da Prefeitura de Curitiba. CMSs para sites institucionais.</p>
                 </div>
                 <div class="experience-item animate-on-scroll">
                     <div class="experience-date">Set 2008 - Jul 2010</div>
                     <h3 class="experience-title">Cargo Comissionado</h3>
                     <div class="experience-company">SSP-PR / Celepar</div>
-                    <p class="experience-desc">Projetos de segurança pública, IML, Polícia Civil e Detran-PR. Struts +
-                        Hibernate e PHP.</p>
+                    <p class="experience-desc">Desenvolvimento e manutenção de sistemas para projetos de segurança pública (IML, Polícia Civil e Detran-PR). Desenvolvimento utilizando Java, Struts, Hibernate e PHP.</p>
                 </div>
                 <div class="experience-item animate-on-scroll">
                     <div class="experience-date">Jun 2007 - Jun 2008</div>
                     <h3 class="experience-title">Estagiário</h3>
                     <div class="experience-company">Celepar</div>
-                    <p class="experience-desc">Desenvolvimento e manutenção de projetos de segurança pública. PHP com
-                        framework próprio.</p>
+                    <p class="experience-desc">Desenvolvimento e manutenção de sistemas para projetos de segurança pública. Desenvolvimento utilizando PHP e framework próprio.</p>
                 </div>
             </div>
         </div>
@@ -1419,132 +1394,7 @@
     </footer>
 
     <script>
-        // i18n functionality
-        const translations = {
-            'pt-BR': {
-                'logo': 'Carlos Toro',
-                'meta_description': 'Portfólio de desenvolvedor Full Stack Sênior com 17+ anos de experiência. Especialista em PHP, Golang, VueJS, React e arquitetura de microserviços.',
-                'hero_badge': 'Disponível para novos projetos',
-                'hero_title': 'Desenvolvedor<br/>Full Stack Sênior',
-                'hero_subtitle': 'Especialista Full Stack com 17 anos de trajetória na criação de soluções robustas de alta performance. Foco estratégico em arquitetura de microsserviços, escalabilidade e ecossistemas cloud.',
-                'hero_button_projects': 'Ver Projetos',
-                'hero_button_contact': 'Entrar em Contato',
-                'nav_sobre': 'Sobre',
-                'nav_habilidades': 'Habilidades',
-                'nav_projetos': 'Projetos',
-                'nav_engenharia': 'Engenharia',
-                'nav_freelance': 'Freelance',
-                'nav_experiencia': 'Experiência',
-                'nav_contato': 'Contato',
-                'about_title': 'Sobre a Trajetória',
-                'about_paragraph1': 'Desenvolvedor Full Stack com 17 anos de experiência, consolidando uma trajetória focada no desenvolvimento de sistemas web e backend de alta complexidade. Atuação estratégica em setores como E-learning, CRM, ERP e Marketing Digital, transformando desafios técnicos em soluções eficientes.',
-                'about_paragraph2': 'Especialista em ecossistemas backend (PHP, Golang, Java) e infraestrutura, com ênfase em arquitetura de microsserviços, escalabilidade e otimização de sistemas em nuvem. Abordagem analítica e colaborativa, comprometida com a entrega de código de alta qualidade e arquiteturas resilientes.',
-                'about_highlight_performance': 'High Performance',
-                'about_highlight_cloud': 'Cloud (AWS/Azure)',
-                'skills_title': 'Habilidades & Tecnologias',
-                'skills_description': 'Especializações técnicas fundamentadas na entrega de soluções escaláveis e de alta performance.',
-                'github_highlights_title': 'Engenharia de Software',
-                'github_backend_title': 'Arquitetura Backend & Golang',
-                'github_backend_description': 'Projetos de alta performance e APIs escaláveis. Experiência técnica em arquitetura orientada a serviços e otimização de sistemas, exemplificada por implementações em Go como <i>busca-cep-go</i> e <i>go-documents</i>.',
-                'github_open_source_title': 'Open Source & Performance',
-                'github_open_source_description': 'Contribuições ativas no ecossistema open source, com foco em benchmarking, redução de latência e desenvolvimento de ferramentas para otimização de performance (ex: <i>go-perfbook</i>).',
-                'projects_title': 'Projetos em Destaque',
-                'projects_description': 'Uma seleção dos projetos que demonstram minha experiência e habilidades técnicas',
-                'experience_title': 'Experiência Profissional',
-                'freelance_title': 'Disponível para Freelance',
-                'freelance_description': 'Estou atualmente disponível para projetos freelance. Se você tem uma ideia ou precisa de ajuda com seu projeto, vamos conversar!',
-                'contact_title': 'Contato',
-                'contact_description': 'Vamos criar algo incrível juntos',
-                'contact_name': 'Nome',
-                'contact_email': 'Email',
-                'contact_subject': 'Assunto',
-                'contact_message': 'Mensagem',
-                'contact_submit': 'Enviar Mensagem',
-                'footer_text': '© 2026 Carlos Toro. Desenvolvido com <span style="color: #ef4444;">♥</span>, IA e muito café.',
-                'nav_lang_pt': 'PT',
-                'nav_lang_en': 'EN'
-            },
-            'en-US': {
-                'logo': 'Carlos Toro',
-                'hero_badge': 'Available for new projects',
-                'hero_title': 'Developer<br/>Senior Full Stack',
-                'hero_subtitle': 'Senior Full Stack specialist with 17 years of experience creating robust, high-performance solutions. Strategic focus on microservices architecture, scalability, and cloud ecosystems.',
-                'hero_button_projects': 'View Projects',
-                'hero_button_contact': 'Get in Touch',
-                'nav_sobre': 'About',
-                'nav_habilidades': 'Skills',
-                'nav_projetos': 'Projects',
-                'nav_engenharia': 'Engineering',
-                'nav_freelance': 'Freelance',
-                'nav_experiencia': 'Experience',
-                'nav_contato': 'Contact',
-                'about_title': 'About My Journey',
-                'about_paragraph1': 'Senior Full Stack Developer with 17 years of experience, specializing in developing high-complexity web and backend systems. Strategic experience in sectors like E-learning, CRM, ERP and Digital Marketing, transforming technical challenges into efficient solutions.',
-                'about_paragraph2': 'Expert in backend ecosystems (PHP, Golang, Java) and infrastructure, with emphasis on microservices architecture, scalability, and cloud system optimization. Analytical and collaborative approach, committed to delivering high-quality code and resilient architectures.',
-                'about_highlight_performance': 'High Performance',
-                'about_highlight_cloud': 'Cloud (AWS/Azure)',
-                'skills_title': 'Skills & Technologies',
-                'skills_description': 'Technical expertise focused on delivering scalable and high-performance solutions.',
-                'github_highlights_title': 'Software Engineering',
-                'github_backend_title': 'Backend Architecture & Golang',
-                'github_backend_description': 'High-performance projects and scalable APIs. Technical experience in service-oriented architecture and system optimization, exemplified by Go implementations like <i>busca-cep-go</i> and <i>go-documents</i>.',
-                'github_open_source_title': 'Open Source & Performance',
-                'github_open_source_description': 'Active contributions to the open source ecosystem, focusing on benchmarking, latency reduction, and developing performance optimization tools (ex: <i>go-perfbook</i>).',
-                'projects_title': 'Featured Projects',
-                'projects_description': 'A selection of projects demonstrating my experience and technical skills',
-                'experience_title': 'Professional Experience',
-                'freelance_title': 'Available for Freelance',
-                'freelance_description': 'I am currently available for freelance projects. If you have an idea or need help with your project, let\'s talk!',
-                'contact_title': 'Contact',
-                'contact_description': 'Let\'s create something amazing together',
-                'contact_name': 'Name',
-                'contact_email': 'Email',
-                'contact_subject': 'Subject',
-                'contact_message': 'Message',
-                'contact_submit': 'Send Message',
-                'footer_text': '© 2026 Carlos Toro. Developed with <span style="color: #ef4444;">♥</span>, AI and lots of coffee.',
-                'nav_lang_pt': 'PT',
-                'nav_lang_en': 'EN'
-            }
-        };
-
-        // This script is no longer needed as translation is handled by separate HTML files.
-        // Keeping it for data-i18n attribute reference.
-        // It will be removed in a future iteration.
-
-        // function initLanguage() {
-        //     const storedLang = localStorage.getItem('language');
-        //     const browserLang = navigator.language.startsWith('pt') ? 'pt-BR' : 'en-US';
-        //     const lang = storedLang || browserLang;
-        //     setLanguage(lang);
-        // }
-
-        // function setLanguage(lang) {
-        //     localStorage.setItem('language', lang);
-        //     document.documentElement.lang = lang;
-
-        //     document.querySelectorAll('[data-i18n]').forEach(element => {
-        //         const key = element.getAttribute('data-i18n');
-        //         if (translations[lang] && translations[lang][key]) {
-        //             element.innerHTML = translations[lang][key];
-        //         }
-        //         }
-        //
-        //         // Update button states
-        //         document.querySelectorAll('.lang-selector button').forEach(button => {
-        //             button.classList.toggle('active', button.getAttribute('data-lang') === lang);
-        //         });
-        //     }
-        //
-        //     // Add event listeners for language buttons
-        //     function initLanguageSelector() {
-        //         document.querySelectorAll('.lang-selector button').forEach(button => {
-        //             button.addEventListener('click', () => {
-        //                 const lang = button.getAttribute('data-lang');
-        //                 setLanguage(lang);
-        //             });
-        //         });
-        //     }
+        // Translation handled via separate static pages: index.html (pt-BR) and en/index.html (en-US).
 
         const nav = document.querySelector('nav');
         const mobileToggle = document.querySelector('.mobile-toggle');
@@ -1604,9 +1454,6 @@
         if (typedText) {
             typedText.style.opacity = '1';
         }
-
-        // initLanguage();
-        // initLanguageSelector();
     </script>
 </body>
 
