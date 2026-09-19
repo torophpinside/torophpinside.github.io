@@ -1528,23 +1528,23 @@
         //         if (translations[lang] && translations[lang][key]) {
         //             element.innerHTML = translations[lang][key];
         //         }
-            });
-
-            // Update button states
-            document.querySelectorAll('.lang-selector button').forEach(button => {
-                button.classList.toggle('active', button.getAttribute('data-lang') === lang);
-            });
-        }
-
-        // Add event listeners for language buttons
-        function initLanguageSelector() {
-            document.querySelectorAll('.lang-selector button').forEach(button => {
-                button.addEventListener('click', () => {
-                    const lang = button.getAttribute('data-lang');
-                    setLanguage(lang);
-                });
-            });
-        }
+        //         }
+        //
+        //         // Update button states
+        //         document.querySelectorAll('.lang-selector button').forEach(button => {
+        //             button.classList.toggle('active', button.getAttribute('data-lang') === lang);
+        //         });
+        //     }
+        //
+        //     // Add event listeners for language buttons
+        //     function initLanguageSelector() {
+        //         document.querySelectorAll('.lang-selector button').forEach(button => {
+        //             button.addEventListener('click', () => {
+        //                 const lang = button.getAttribute('data-lang');
+        //                 setLanguage(lang);
+        //             });
+        //         });
+        //     }
 
         const nav = document.querySelector('nav');
         const mobileToggle = document.querySelector('.mobile-toggle');
